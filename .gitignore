@@ -26,3 +26,5 @@ replay_pid*
 # Custom
 
 src/main/webapp/WEB-INF/lib/servlet-api-2.5/
+
+dist/
