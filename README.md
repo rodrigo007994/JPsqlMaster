@@ -13,10 +13,15 @@ Tested on jdk-11.0.25 and groovy-4.0.23 on Windows 10 64 bit
 servlet-api-2.5-sources.jar (https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar) must be added to src\main\webapp\WEB-INF\lib
 
 APP\SRC\MAIN\WEBAPP\WEB-INF\LIB
+
 x└───servlet-api-2.5
+
 x++++├───dtd
+
 x++++└───javax
+
 x++++++++└───servlet
+
 x++++++++++++└───http
 
 run appbuild.bat
