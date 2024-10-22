@@ -1,1 +1,19 @@
-"" 
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+                             http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+         
+    <!--  Declare the servlet class  -->
+    <servlet>
+        <servlet-name>timeServlet1</servlet-name>
+        <servlet-class>com.jarfiller.example.TimeServlet</servlet-class>
+    </servlet>
+    
+    <!--  Declare the URL path handled by this servlet (more)  -->
+    <servlet-mapping>
+        <servlet-name>timeServlet1</servlet-name> <!-- much match servlet-name above! -->
+        <url-pattern>/now</url-pattern>
+    </servlet-mapping>
+</web-app>
