@@ -1,8 +1,0 @@
-
-APP\SRC\MAIN\WEBAPP\WEB-INF\LIB
-
-└───servlet-api-2.5
-    ├───dtd
-    └───javax
-        └───servlet
-            └───http

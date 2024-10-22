@@ -1,5 +1,5 @@
-# war-generator
-Windows script that generates a tomcat ready war file out of a simple template using Groovy
+# JPsqlMaster
+Groovy based Postgres Query Generator that runs on Tomcat
 
 
 Make available javac,groovyc,7z(7-zip) on the path.
