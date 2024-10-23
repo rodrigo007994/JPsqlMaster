@@ -41,8 +41,10 @@ md "dist/app/WEB-INF/lib"
 copy "lib\servlet-api-6.0.jar" "dist\app\WEB-INF\lib\"
 rd lib /s /q
 cd src\main\groovy
-dir /s /B *.java > ../../../dist/sources.txt
+dir /s /B *.groovy > ../../../dist/sources.txt
 cd ../../../dist/app/WEB-INF
 md classes
 cd classes
-groovyc -cp "../lib/servlet-api-6.0.jar" @../../../sources.txt && cd ../../../../dist/app && 7z.exe a -r ../app.jar * && cd .. && ren app.jar app.war && rd app /s /q && del /f sources.txt
+::groovyc -cp "../lib/servlet-api-6.0.jar" @../../../sources.txt && cd ../../../../dist/app && 7z.exe a -r ../app.jar * && cd .. && ren app.jar app.war && rd app /s /q && del /f sources.txt 
+
+groovyc -cp "../lib/servlet-api-6.0.jar" @../../../sources.txt && cd ../../../../dist/app && 7z.exe a -r ../app.jar * && cd .. && ren app.jar app.war && rd app /s /q && del /f sources.txt && cd ../log && C:\"Program Files (x86)"\GnuWin32\bin\wget http://tomcat:baruna@localhost:8080/manager/text/undeploy?path=/app && C:\"Program Files (x86)"\GnuWin32\bin\wget http://tomcat:baruna@localhost:8080/manager/text/deploy?war=file:/C:/Users/acesspoint/dev/JPsqlMaster/JPsqlMaster/dist/app.war && cd .. && C:\Users\acesspoint\AppData\Local\Programs\Opera\opera.exe http://localhost:8080/app/now

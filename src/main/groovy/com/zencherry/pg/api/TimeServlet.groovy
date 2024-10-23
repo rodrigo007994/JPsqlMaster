@@ -17,7 +17,7 @@ public class TimeServlet extends HttpServlet {
 
     PrintWriter writer = response.getWriter();            // writer for sending text (more)
     writer.print("<html><head><title>Time</title></head><body>");
-    writer.print("The current time is: ");
+    writer.print("The current time RODRIGO COOooL is: ");
     writer.print((new java.util.Date()).toString());
     writer.print("</body></html>");
   }
