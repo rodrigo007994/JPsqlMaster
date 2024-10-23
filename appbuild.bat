@@ -45,4 +45,4 @@ dir /s /B *.java > ../../../dist/sources.txt
 cd ../../../dist/app/WEB-INF
 md classes
 cd classes
-groovyc -cp "../lib/servlet-api-2.5.jar" @../../../sources.txt && cd ../../../../dist/app && 7z.exe a -r ../app.war * && cd .. && rd app /s /q && del /f sources.txt
+groovyc -cp "../lib/servlet-api-2.5.jar" @../../../sources.txt && cd ../../../../dist/app && 7z.exe a -r ../app.jar * && cd .. && ren app.jar app.war && rd app /s /q && del /f sources.txt

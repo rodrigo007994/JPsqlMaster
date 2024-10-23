@@ -8,7 +8,7 @@
     <!--  Declare the servlet class  -->
     <servlet>
         <servlet-name>timeServlet1</servlet-name>
-        <servlet-class>com.jarfiller.example.TimeServlet</servlet-class>
+        <servlet-class>com.zencherry.pg.api.TimeServlet</servlet-class>
     </servlet>
     
     <!--  Declare the URL path handled by this servlet (more)  -->
