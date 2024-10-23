@@ -1,11 +1,14 @@
 package com.zencherry.pg.api;
 
-import javax.servlet.http.*;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
 
 // Servlets that shows the current time
-public class TimeServlet extends javax.servlet.http.HttpServlet {
-
+public class TimeServlet extends HttpServlet {
+	
+  @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws IOException {
 
